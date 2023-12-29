@@ -1,12 +1,14 @@
 import "./App.css";
 import StakeContainer from "./ui/complex/StakeContainer";
 import Navbar from "./ui/components/Navbar";
+import SelectTokenModal from "./ui/components/SelectTokenModal";
 
 function App() {
   return (
-    <div>
+    <div className="relative h-full w-screen">
+      <SelectTokenModal />
       <Navbar />
-      <div className="w-full flex justify-center pt-[83px]">
+      <div className="flex w-full justify-center pt-[83px]">
         <StakeContainer />
       </div>
     </div>
