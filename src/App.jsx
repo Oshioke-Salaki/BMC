@@ -1,15 +1,38 @@
 import "./App.css";
 import StakeContainer from "./ui/complex/StakeContainer";
-import Navbar from "./ui/components/Navbar";
+
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Navigate
+} from 'react-router-dom'
+
+// library imports
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
+import { AppLayout } from "./ui/layout";
 
 function App() {
+
+  const router = createBrowserRouter([
+    {
+      path: '/',
+      element: <AppLayout/>,
+      children: [
+        {
+          index: true,
+          element: <StakeContainer />
+        }
+      ]
+    }
+  ])
+
   return (
-    <div className="h-full w-screen">
-      <Navbar />
-      <div className="flex w-full justify-center pt-[83px]">
-        <StakeContainer />
-      </div>
-    </div>
+    <>
+      <RouterProvider router={router}/>
+      <ToastContainer/>
+    </>
   );
 }
 
