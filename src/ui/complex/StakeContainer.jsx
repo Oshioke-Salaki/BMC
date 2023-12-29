@@ -4,7 +4,7 @@ import DataROw from "../components/DataROw";
 // import FlexContainer from "../layout/FlexContainer";
 function StakeContainer() {
   return (
-    <div className="bg-white w-[550px] rounded-[20px] p-6 text-[#3a3a3a]">
+    <div className="bg-white w-[550px] rounded-[20px] p-6 text-[#3a3a3a] mx-auto md:mt-12">
       <div className="flex justify-between mb-[21px] items-center font-medium">
         <h1 className="text-xl">Deposit</h1>
         <div className="flex items-center text-xs">
