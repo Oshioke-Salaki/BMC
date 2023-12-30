@@ -41,13 +41,9 @@ function AppLayout() {
   };
 
   return (
-    <div className="bg-mainBg flex min-h-[100vh] w-full flex-col">
-      <Navbar
-        connection={connection}
-        connectWallet={connectWallet}
-        disconnectWallet={disconnectWallet}
-      />
-      <Outlet />
+    <div className="flex flex-col w-full bg-mainBg min-h-[100vh]">
+      <Navbar connection={connection} connectWallet={connectWallet} disconnectWallet={disconnectWallet} address={address} />
+      {connection && <Outlet context={[provider, address]} />}
     </div>
   );
 }
