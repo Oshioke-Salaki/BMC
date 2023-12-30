@@ -5,7 +5,11 @@ export default {
     // fontFamily: {
     //   sans: ['Inter', 'sans-serif'],
     // },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        mainBg: "url('/src/assets/bg.jpg')",
+      },
+    },
   },
   plugins: [],
 };
