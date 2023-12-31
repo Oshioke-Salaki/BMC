@@ -12,6 +12,9 @@ export default {
       boxShadow: {
         shadowPrimary: "2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.32)",
       },
+      colors: {
+        overlayPrimary: "rgba(58, 58, 58, 0.80)",
+      },
     },
   },
   plugins: [],

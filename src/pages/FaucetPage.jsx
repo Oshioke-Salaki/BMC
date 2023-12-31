@@ -1,4 +1,6 @@
+import { createPortal } from "react-dom";
 import FaucetRequestContainer from "../ui/components/FaucetRequestContainer";
+import FaucetRequestModal from "../ui/complex/FaucetRequestModal";
 
 function FaucetPage() {
   return (
@@ -9,6 +11,8 @@ function FaucetPage() {
         Bwc You can use it to pay transaction fee in Starknet.
       </p>
       <FaucetRequestContainer />
+
+      {createPortal(<FaucetRequestModal />, document.body)}
     </div>
   );
 }
