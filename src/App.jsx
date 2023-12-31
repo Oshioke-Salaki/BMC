@@ -4,34 +4,38 @@ import StakeContainer from "./ui/complex/StakeContainer";
 import {
   createBrowserRouter,
   RouterProvider,
-  Navigate
-} from 'react-router-dom'
+  Navigate,
+} from "react-router-dom";
 
 // library imports
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import { AppLayout } from "./ui/layout";
+import PortfolioPage from "./pages/PortfolioPage";
 
 function App() {
-
   const router = createBrowserRouter([
     {
-      path: '/',
-      element: <AppLayout/>,
+      path: "/",
+      element: <AppLayout />,
       children: [
         {
           index: true,
-          element: <StakeContainer />
-        }
-      ]
-    }
-  ])
+          element: <StakeContainer />,
+        },
+        {
+          path: "/portfolio",
+          element: <PortfolioPage />,
+        },
+      ],
+    },
+  ]);
 
   return (
     <>
-      <RouterProvider router={router}/>
-      <ToastContainer/>
+      <RouterProvider router={router} />
+      <ToastContainer />
     </>
   );
 }

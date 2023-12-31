@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-// import { NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-function NavigationLink({ text }) {
+function NavigationLink({ text, to }) {
   return (
-    <li className="py-[10px] px-[20px] bg-transparent rounded-[20px]">
-      {/* <NavLink to={to}>{text}</NavLink> */}
-      {text}
+    <li className="rounded-[20px] bg-transparent px-[20px] py-[10px]">
+      <NavLink to={to}>{text}</NavLink>
+      {/* {text} */}
     </li>
   );
 }
