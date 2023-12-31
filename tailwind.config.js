@@ -9,6 +9,9 @@ export default {
       backgroundImage: {
         mainBg: "url('/src/assets/bg.jpg')",
       },
+      boxShadow: {
+        shadowPrimary: "2.6px 5.3px 5.3px hsl(0deg 0% 0% / 0.32)",
+      },
     },
   },
   plugins: [],
