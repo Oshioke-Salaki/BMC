@@ -1,12 +1,12 @@
-function WaitingForConfirmationModal() {
+function RequestCompleteModal() {
   return (
     <div className="pt-[24px] text-center font-bold leading-6 text-black">
-      <h1 className="text-xl mb-[12px]">Waiting for Confirmation</h1>
+      <h1 className="mb-[12px] text-xl">Request Complete</h1>
       <p className="text-sm font-medium text-[#3a3a3a]">
-        Transcation has been initialized. Waiting for confirmation
+        Congratulations, 10BWC was sent to your account.
       </p>
 
-      <h3 className="mt-8 text-sm mb-[12px]">Transaction Hash</h3>
+      <h3 className="mb-[12px] mt-8 text-sm">Transaction Hash</h3>
       <h5 className="text-xs font-medium text-[#3a3a3a]">
         0x883dfd4a02f4b5d29ec0663b6e115aff5e3216dce41c4735e7ff59a43e312f
       </h5>
@@ -17,4 +17,4 @@ function WaitingForConfirmationModal() {
   );
 }
 
-export default WaitingForConfirmationModal;
+export default RequestCompleteModal;
