@@ -13,6 +13,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 import { AppLayout } from "./ui/layout";
 import PortfolioPage from "./pages/PortfolioPage";
+import FaucetPage from "./pages/FaucetPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +28,10 @@ function App() {
         {
           path: "/portfolio",
           element: <PortfolioPage />,
+        },
+        {
+          path: "/faucet",
+          element: <FaucetPage />,
         },
       ],
     },
