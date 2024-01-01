@@ -2,7 +2,7 @@ import coinLogo from "../../assets/solanaLogo.png";
 import arrDown from "../../assets/down-arrow.svg";
 import { useState } from "react";
 
-function FaucetRequestContainer() {
+function FaucetRequestContainer({sendFaucet}) {
   const [address, setAddress] = useState("");
   return (
     <div className="shadow-shadowPrimary flex flex-col rounded-[5px] bg-white px-6 pb-10 pt-6">
@@ -25,7 +25,7 @@ function FaucetRequestContainer() {
           }}
         />
       </div>
-      <button className="mt-[60px] self-center rounded-[50px] bg-[#430F5D] px-[172px] py-[10px]">
+      <button onClick={() => {sendFaucet(address)}} className="mt-[60px] self-center rounded-[50px] bg-[#430F5D] px-[172px] py-[10px]">
         Send Request
       </button>
     </div>
