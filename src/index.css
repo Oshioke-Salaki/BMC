@@ -7,3 +7,31 @@ body {
   /* background-color: #863efa; */
   position: relative;
 }
+
+.navbar {
+  position: fixed;
+  width: 90%;
+  animation: slide-down 1500ms ease   ;
+}
+
+@keyframes slide-down {
+  from {
+    top: -350px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.stake-container {
+  animation: stake-container-animation 1500ms ease   ;
+}
+
+@keyframes stake-container-animation {
+  from {
+    transform: scale(0.1)
+  }
+  to {
+    transform: scale(1)
+  }
+}
