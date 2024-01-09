@@ -43,7 +43,7 @@ function AppLayout() {
   };
 
   return (
-    <div className="flex min-h-[100vh] w-full flex-col bg-mainBg pt-[140px]">
+    <div className="flex min-h-[100vh] w-full flex-col bg-mainBg bg-cover bg-center bg-no-repeat pt-[140px]">
       <Navbar
         connection={connection}
         connectWallet={connectWallet}
