@@ -11,27 +11,58 @@ body {
 .navbar {
   position: fixed;
   width: 90%;
-  animation: slide-down 1500ms ease   ;
+  animation: slide-down 1500ms ease;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+
 }
 
 @keyframes slide-down {
   from {
-    top: -350px;
+    top: -150px;
+    visibility: visible;
   }
   to {
-    top: 0px;
+    top: 30px;
+    visibility: visible;
   }
 }
 
 .stake-container {
-  animation: stake-container-animation 1500ms ease   ;
+  animation: stake-container-animation 1500ms ease;
+  animation-delay: 1s;
+  visibility: hidden;
+  animation-fill-mode: forwards;
 }
 
 @keyframes stake-container-animation {
   from {
-    transform: scale(0.1)
+    /* transform: scale(0.1); */
+    opacity: 0;
+    visibility: visible;
   }
   to {
-    transform: scale(1)
+    /* transform: scale(1); */
+    opacity: 1;
+    visibility: visible;
   }
 }
+
+/* .nice {
+  animation: leftMove 1500ms;
+  visibility: hidden;
+  animation-fill-mode: forwards;
+  animation-delay: 2s;
+
+}
+
+@keyframes leftMove {
+  from{
+    left: -350px;
+    visibility: visible;
+  }
+  to {
+    left: 0px;
+    visibility: visible;
+  }
+} */
