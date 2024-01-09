@@ -23,8 +23,8 @@ function FaucetPage() {
         setStep(true)
         
     } catch (error) {
-        alert(error.message)
-        console.log(error)
+        console.error('sendFaucet error', error)
+        // console.log(error)
     }
 }
 

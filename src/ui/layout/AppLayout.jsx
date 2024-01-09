@@ -10,7 +10,9 @@ function AppLayout() {
 
   useEffect(() => {
     const connectToStarknet = async () => {
+      console.log('connect', connect)
       const connection = await connect({ modalMode: "neverAsk" });
+      console.log('connection', connection)
 
       if (connection && connection.isConnected) {
         setConnection(connection);
